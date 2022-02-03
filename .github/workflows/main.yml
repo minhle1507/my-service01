@@ -16,8 +16,8 @@ jobs:
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
 
-   # - name: Build the hello-world Docker image
-     # run: |
-      #  docker build . --tag ghcr.io/jonashackt/hello-world:latest
-      #  docker run ghcr.io/jonashackt/hello-world:latest
-       # docker push ghcr.io/jonashackt/hello-world:latest
+   - name: Build the hello-world Docker image
+     run: |
+        docker build . --tag ghcr.io/minhle1507/my-service01/hello-world:latest
+        docker run ghcr.io/my-service01/hello-world:latest
+        docker push ghcr.io/my-service01/hello-world:latest
